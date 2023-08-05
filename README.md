@@ -1,9 +1,80 @@
-<docs lang="md">
-<link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Alata:wght@200;400;700&display=swap"
-/>
-<div class="container">
+<svg fill="none" viewBox="0 0 1000 2000" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        .container {
+            margin: 3vh 3vw;
+            display: flex;
+            flex-direction: column;
+            gap: 10vh;
+            font-family: Alata;
+        }
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-title,
+        h3 {
+            text-align: center;
+        }
+        .other-lib {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            align-items: center;
+            border-image-source: linear-gradient(to left, #00c853, #b2ff59);
+            border-image-slice: 1;
+            border-width: 1vw;
+            border-style: solid;
+            padding: 0 2vw 2vw 2vw;
+        }
+        .main h3 {
+            text-transform: uppercase;
+        }
+        p {
+            display: flex;
+            gap: 2vw;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .lang {
+            position: relative;
+            padding: 20px;
+            width: 100%;
+        }
+        .lang:after {
+            content: "";
+            position: absolute;
+            top: 54px;
+            left: 17px;
+            width: calc(100% - 40px);
+            height: calc(100% - 50px);
+            border-image-slice: 1;
+            border-width: 3px;
+            border-style: solid;
+            border-image-source: linear-gradient(to left, #4d00c8, #f875ff);
+        }
+        .lang h3 {
+            padding-inline: 10px;
+            position: relative;
+            z-index: 1;
+            background-color: var(--bgColor-default, var(--color-canvas-default));
+        }
+        .lang .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      </style>
+     <div class="container">
     <header>
         <img class="header-img" src="octopus.png" width="400" />
         <div class="resume">
@@ -312,76 +383,10 @@
         </p>
       </div>
     </div>
-<style>
-  .container {
-    margin: 3vh 3vw;
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
-    font-family: Alata;
-  }
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .header-title,
-  h3 {
-    text-align: center;
-  }
-  .other-lib {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    align-items: center;
-    border-image-source: linear-gradient(to left, #00c853, #b2ff59);
-    border-image-slice: 1;
-    border-width: 1vw;
-    border-style: solid;
-    padding: 0 2vw 2vw 2vw;
-  }
-  .main h3 {
-    text-transform: uppercase;
-  }
-  p {
-    display: flex;
-    gap: 2vw;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .lang {
-    position: relative;
-    padding: 20px;
-    width: 100%;
-  }
-  .lang:after {
-    content: "";
-    position: absolute;
-    top: 54px;
-    left: 17px;
-    width: calc(100% - 40px);
-    height: calc(100% - 50px);
-    border-image-slice: 1;
-    border-width: 3px;
-    border-style: solid;
-    border-image-source: linear-gradient(to left, #4d00c8, #f875ff);
-  }
-  .lang h3 {
-    padding-inline: 10px;
-    position: relative;
-    z-index: 1;
-    background-color: var(--bgColor-default, var(--color-canvas-default));
-  }
-  .lang .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
+    </div>
+  </foreignObject>
+</svg>
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Alata:wght@200;400;700&display=swap"
+/>
