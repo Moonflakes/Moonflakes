@@ -1,4 +1,4 @@
-+<img align="left" src="octopus.png" width="220" />
+<img align="left" src="octopus.png" width="220" />
 <h1 align="center">Hey, I am Margot!<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30" height="30" />
  </h1>
 <h3 align="center">Frontend Engineer</h3>
