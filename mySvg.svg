@@ -3,76 +3,86 @@
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
                 .container {
-                margin: 3vh 3vw;
-                display: flex;
-                flex-direction: column;
-                gap: 10vh;
-                font-family: Alata;
+                    margin: 3vh 3vw;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10vh;
+                    font-family: "Open Sans", sans-serif;
+                    --color-text: #e6edf3;
+                    --color-background: #0d1117;
+                    color: var(--color-text);
                 }
                 header {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
                 }
                 .header-title,
                 h3 {
-                text-align: center;
+                    text-align: center;
                 }
                 .other-lib {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-evenly;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-evenly;
                 }
                 .main {
-                display: flex;
-                flex-direction: column;
-                gap: 5vh;
-                align-items: center;
-                border-image-source: linear-gradient(to left, #00c853, #b2ff59);
-                border-image-slice: 1;
-                border-width: 1vw;
-                border-style: solid;
-                padding: 0 2vw 2vw 2vw;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5vh;
+                    align-items: center;
+                    border-image-source: linear-gradient(to left, #00c853, #b2ff59);
+                    border-image-slice: 1;
+                    border-width: 1vw;
+                    border-style: solid;
+                    padding: 0 2vw 2vw 2vw;
                 }
                 .main h3 {
-                text-transform: uppercase;
+                    text-transform: uppercase;
                 }
                 p {
-                display: flex;
-                gap: 2vw;
-                justify-content: space-around;
-                flex-wrap: wrap;
+                    display: flex;
+                    gap: 2vw;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
                 }
                 .lang {
-                position: relative;
-                padding: 20px;
-                width: 100%;
+                    position: relative;
+                    padding: 20px;
+                    width: 100%;
                 }
                 .lang:after {
-                content: "";
-                position: absolute;
-                top: 54px;
-                left: 17px;
-                width: calc(100% - 40px);
-                height: calc(100% - 50px);
-                border-image-slice: 1;
-                border-width: 3px;
-                border-style: solid;
-                border-image-source: linear-gradient(to left, #4d00c8, #f875ff);
+                    content: "";
+                    position: absolute;
+                    top: 47px;
+                    left: 17px;
+                    width: calc(100% - 40px);
+                    height: calc(100% - 50px);
+                    border-image-slice: 1;
+                    border-width: 3px;
+                    border-style: solid;
+                    border-image-source: linear-gradient(to left, #4d00c8, #f875ff);
                 }
                 .lang h3 {
-                padding-inline: 10px;
-                position: relative;
-                z-index: 1;
-                background-color: var(--bgColor-default, var(--color-canvas-default));
+                    padding-inline: 10px;
+                    position: relative;
+                    z-index: 1;
+                    background-color: var(--color-background);
                 }
                 .lang .title {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
+                @media (prefers-color-scheme: light) {
+                    .container {
+                        --color-text: #1F2328;
+                        --color-background: white;
+                    }
+                }
+                
             </style>
             <div class="container">
                 <header>
